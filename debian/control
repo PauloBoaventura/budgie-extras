@@ -160,17 +160,9 @@ Description: Applet providing quick access to workspaces for the Budgie Desktop
  window in any workspace is possible.
 
 Package: budgie-workspace-wallpaper-applet
-Architecture: all
-Depends: python3,
-	python3-gi,
-	wmctrl,
-	gir1.2-budgie-1.0,
-	gir1.2-glib-2.0,
-	gir1.2-gtk-3.0,
-	gir1.2-peas-1.0,
-	python3-psutil,
-	dconf-cli,
-	${misc:Depends}, ${python3:Depends}
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ budgie-extras-common
 Description: Applet providing per workspace wallpaper
  This is part of a suite of python3 and Vala based applets for the Budgie
  Desktop that provide additional user orientated capabilities.
